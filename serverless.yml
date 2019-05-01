@@ -1,0 +1,25 @@
+service: podium-serverless
+
+provider:
+  name: aws
+  runtime: nodejs8.10
+
+functions:
+  manifest:
+    handler: handler.manifest
+    events:
+      - http:
+          path: manifest.json
+          method: get
+  content:
+    handler: handler.content
+    events:
+      - http:
+          path: content
+          method: get
+  fallback:
+    handler: handler.fallback
+    events:
+      - http:
+          path: fallback
+          method: get

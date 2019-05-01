@@ -1,0 +1,11 @@
+{
+  "name": "podium-serverless",
+  "version": "1.0.0",
+  "description": "",
+  "main": "handler.js",
+  "author": "Trygve Lie",
+  "license": "MIT",
+  "dependencies": {
+    "@podium/podlet": "4.0.0-next.4"
+  }
+}
